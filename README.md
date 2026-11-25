@@ -1,19 +1,30 @@
-# Hi, I'm Hanchen Zhang 👋
+# Hi, I'm Hanchen 👋
 
-Student at the University of Birmingham, UK, interested in **machine learning and AI engineering**. I like building models end to end — data pipeline, training, evaluation — and being honest about where they fail.
+Computer Science student at the University of Birmingham (BSc, 2025 to 2028). I like building software end to end: getting messy real data into a clean database, writing the code and tests around it, and putting a simple web app on top so people can actually use it.
 
 ## Featured projects
 
-### [LSTM Seq2Seq: French → English translation](https://github.com/hanchenzhang32-byte/lstm-seq2seq-fr-en)
-PyTorch encoder–decoder built from scratch and trained on 8,000 Tatoeba sentence pairs. Test corpus BLEU **11.39** (sacreBLEU, published signature), validation-only model selection, reproducible seeded runs, pytest-tested preprocessing, and a failure analysis tracing errors to unknown words, sentence length and exposure bias.
+### [SME Review](https://github.com/hanchenzhang32-byte/sme-review-app)
+A web app where analysts confirm or correct uncertain LLM tag mappings and see early warning alerts for 9,588 UK companies. Built with the Next.js App Router (server components and Server Actions), a PostgreSQL schema with constraints and transactions, and an audit log where rows are only ever added. 26 Vitest tests, including the review flow against a real Postgres database in memory.
 
-`PyTorch` `LSTM` `NLP` `sacreBLEU` `pytest`
+`TypeScript` `Next.js` `React` `PostgreSQL` `Vitest`
 
-### [MNIST: MLP vs CNN](https://github.com/hanchenzhang32-byte/mnist-digit-classification)
-Like-for-like comparison of an MLP and a CNN on the same seeded split and evaluation code: **99.04%** (CNN) vs **97.82%** (MLP) test accuracy, with confusion matrices and an explanation of why convolutions make 122 fewer errors.
+### [UK SME Financial Health](https://github.com/hanchenzhang32-byte/uk-sme-financial-health)
+Parses 84,151 real Companies House accounts (iXBRL) in Python, loads 2.3 million figures into PostgreSQL and maps 929 tags to 13 balance sheet items with SQL rules. Compares the rules with an LLM (Claude Haiku) on accuracy and how easy each is to audit, and adds a one year ahead distress prediction model.
 
-`PyTorch` `CNN` `computer vision`
+`Python` `PostgreSQL` `SQL` `pytest` `Claude API` `scikit-learn`
+
+### [Bankruptcy Prediction](https://github.com/hanchenzhang32-byte/polish-bankruptcy)
+Tests whether gradient boosting beats the classic Altman Z' score on 43,405 Polish company records, with checks for duplicates, leakage from missing values and ratios that may use future data.
+
+`Python` `scikit-learn` `pandas` `pytest`
+
+### Earlier work
+- [Java text adventure](https://github.com/hanchenzhang32-byte/java-text-adventure): command line game with a 5x5 map, inventory, keycard puzzles and JUnit tests.
+- [Java coffee shop simulation](https://github.com/hanchenzhang32-byte/java-coffee-shop-simulation): object oriented resource simulation from coursework.
+- [LSTM French to English translation](https://github.com/hanchenzhang32-byte/lstm-seq2seq-fr-en): PyTorch encoder and decoder built from scratch.
+- [MNIST: MLP vs CNN](https://github.com/hanchenzhang32-byte/mnist-digit-classification): 99.04% vs 97.82% test accuracy on the same split.
 
 ## Tools
 
-Python · PyTorch · Java · JUnit · pytest · Git
+TypeScript · JavaScript · Python · Java · SQL · React · Next.js · PostgreSQL · Git · Vitest · pytest · JUnit
