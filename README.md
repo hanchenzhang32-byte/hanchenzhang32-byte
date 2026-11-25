@@ -5,7 +5,7 @@ Computer Science student at the University of Birmingham (BSc, 2025 to 2028). I 
 ## Featured projects
 
 ### [SME Review](https://github.com/hanchenzhang32-byte/sme-review-app)
-A web app where analysts confirm or correct uncertain LLM tag mappings and see early warning alerts for 9,588 UK companies. Built with the Next.js App Router (server components and Server Actions), a PostgreSQL schema with constraints and transactions, and an audit log where rows are only ever added. 26 Vitest tests, including the review flow against a real Postgres database in memory.
+A web app where analysts confirm or correct uncertain LLM tag mappings and see early warning alerts for 9,588 UK companies. Built with the Next.js App Router (server components and Server Actions), a PostgreSQL schema with constraints and transactions, and an audit log where rows are only ever added. 28 Vitest tests, including the review flow against a real Postgres database in memory. **[Live demo](https://sme-review-app.vercel.app)** on Vercel with a Neon Postgres database.
 
 `TypeScript` `Next.js` `React` `PostgreSQL` `Vitest`
 
